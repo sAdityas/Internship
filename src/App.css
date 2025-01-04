@@ -1,0 +1,76 @@
+/* Gradient Background */
+body {
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple to Blue Gradient */
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* App container style */
+.App {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Add blur effect */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  height: 80vh; /* Adjust height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; /* To hide unwanted scrollbars */
+}
+
+/* Chat container style */
+.chat-container {
+  overflow-y: auto; /* Allow vertical scrolling */
+  flex-grow: 1; /* Let the chat container grow */
+  padding: 10px;
+  margin-bottom: 10px; /* Space between the chat and input */
+  border-radius: 5px;
+  max-height: 100%; /* Ensures messages scroll */
+}
+
+/* Individual chat box */
+.chat-box {
+  background-color: #e3f2fd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  word-wrap: break-word; /* Prevent text from overflowing */
+  max-width: 100%;
+}
+
+/* Input area style */
+.chat-input form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.chat-input button {
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #45a049;
+}
